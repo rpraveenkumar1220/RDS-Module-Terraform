@@ -3,7 +3,7 @@ resource "aws_db_subnet_group" "db_subnet_group" {
   subnet_ids = var.subnet_ids
 
   tags = {
-    Name = "${var.component}-${var.env}-sb-g"
+    Name = "${var.component}-${var.env}-sbg"
   }
 }
 ##creating security group for RDS module
